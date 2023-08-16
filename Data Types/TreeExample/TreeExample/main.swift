@@ -92,10 +92,25 @@ var root = Node("Kristi")
 root.add(child: sarah)
 root.add(child: kristen)
 
-if let sarah = root.find("Sarah") {
-    print(sarah.count)
-    sarah.add(child: cooper)
+
+
+let kristi = Node("Kristi") {
+    Node("Sarah") {
+        Node("Kaylee")
+        Node("Hudson")
+    }
+    Node("Kristen") {
+        Node("Aiden")
+    }
 }
+
+print(kristi.count)
+
+
+//if let sarah = root.find("Sarah") {
+//    print(sarah.count)
+//    sarah.add(child: cooper)
+//}
 
 
 /* struct Node<Value> {
